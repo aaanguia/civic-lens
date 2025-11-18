@@ -166,10 +166,6 @@ nav.mobile-nav .menu li a:hover {
   display: none;
 }
 
-#menu-toggle:checked ~ .menu {
-  display: flex;
-}
-
 @media screen and (min-width: 920px) {
   nav.mobile-nav {
     display: flex;
@@ -577,4 +573,10 @@ body.dark-mode #featuredarticles article h3 {
 
 body.dark-mode blockquote {
   color: var(--watchdog-white);
+}
+
+@supports(selector(:has(#menu-toggle:checked))) {
+  nav:has(#menu-toggle:checked) .menu {
+    display: flex;
+  }
 }

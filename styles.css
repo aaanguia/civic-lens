@@ -575,7 +575,7 @@ body.dark-mode blockquote {
   color: var(--watchdog-white);
 }
 
-@supports(selector(:has(#menu-toggle:checked))) {
+@supports (selector(:has(#menu-toggle:checked))) {
   nav:has(#menu-toggle:checked) .menu {
     display: flex;
   }
